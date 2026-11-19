@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sohof | Editorial design, thought through</title>
+<meta name="description" content="Sohof is an editorial design studio. We give books, magazines, catalogs and reports an idea, not just a layout.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=EB+Garamond:ital@0;1&family=Jost:wght@400&family=Aref+Ruqaa:wght@700&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=EB+Garamond:ital@0;1&family=Jost:wght@400&family=Aref+Ruqaa:wght@700&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet"></noscript>
+<style>
+:root{--vellum:#EFEAE0;--ink:#1A1A1E;--ox:#5E1A22;--plate:#8A857B;
+--serif:"Playfair Display",Georgia,serif;--body:"EB Garamond",Georgia,serif;--small:"Jost",system-ui,sans-serif;--ar:"Aref Ruqaa","Noto Naskh Arabic",serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--vellum);color:var(--ink);font:400 1.1rem/1.6 var(--body)}
+html[lang=ar] body{font-family:"Noto Naskh Arabic",var(--body);line-height:1.9}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{font-family:var(--ar);font-weight:700}
+html[lang=ar] *{letter-spacing:0!important}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ox);outline-offset:4px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(1.2rem,5vw,3rem)}
+section{padding:clamp(4rem,9vw,7rem) 0}
+.rule{height:1px;background:var(--plate);width:0;transition:width 1.2s ease}
+.rule.in{width:100%}
+h2{font:500 clamp(2rem,5vw,3.2rem)/1.15 var(--serif);margin-bottom:2rem}
+h3{font:500 1.5rem/1.25 var(--serif)}
+.cap{font:400 .8rem var(--small);color:var(--plate)}
+p{max-width:34em}
+
+header{padding:1.4rem 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+nav{display:flex;gap:1.6rem;align-items:center;font:400 .85rem var(--small)}
+nav a{text-decoration:none}nav a:hover{color:var(--ox)}
+#lang{font:400 .85rem var(--small);background:none;border:1px solid var(--ink);color:var(--ink);padding:.4rem 1rem;border-radius:99px;cursor:pointer}
+#lang:hover{background:var(--ink);color:var(--vellum)}
+@media(max-width:640px){nav a{display:none}}
+
+.hero{padding-top:clamp(2rem,6vw,5rem)}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center}
+.wm{display:flex;align-items:center;gap:clamp(.8rem,2vw,1.6rem);direction:ltr}
+.wm .lat{font:500 clamp(2.4rem,8.5vw,6.4rem)/1 var(--serif);letter-spacing:.28em;margin-right:-.28em}
+.wm .bar{width:1px;height:clamp(2.4rem,7vw,5rem);background:var(--plate)}
+.wm .arw{font:700 clamp(3.4rem,12vw,9rem)/1 var(--ar);padding-bottom:.1em}
+.tag{font:italic 500 clamp(1.3rem,3vw,1.9rem)/1.3 var(--serif);margin-top:2rem}
+html[lang=ar] .tag{font:700 1.8rem/1.5 var(--ar)}
+.iris{color:var(--ox);width:min(260px,60%);justify-self:center}
+.iris path{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s .2s ease forwards}
+.iris .h{stroke-width:.6}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}}
+
+.idea p{font:400 clamp(1.3rem,2.6vw,1.8rem)/1.45 var(--body)}
+.idea p+p{margin-top:1.2rem;color:var(--ink)}
+
+.lead{background:var(--ink);color:var(--vellum);display:grid;grid-template-columns:1fr 1fr;min-height:420px}
+.lead .img{border-inline-end:1px solid #EFEAE055;display:grid;place-items:center;padding:2rem;font:italic 400 1rem var(--body);text-align:center}
+.lead .txt{padding:clamp(1.5rem,4vw,3rem);display:flex;flex-direction:column;justify-content:center;gap:1.4rem}
+.lead h3{font-size:clamp(1.8rem,4vw,2.6rem)}
+.beat b{display:block;font:400 .8rem var(--small);margin-bottom:.2rem}
+.beat span{display:block}
+@media(max-width:760px){.lead{grid-template-columns:1fr}.lead .img{min-height:240px;border-inline-end:0;border-bottom:1px solid #EFEAE055}}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2.5rem}
+.card .c{aspect-ratio:3/4;background:var(--ox);color:var(--vellum);padding:1.2rem;display:flex;align-items:flex-end;font:500 1.3rem/1.2 var(--serif);transition:transform .5s ease}
+.card:nth-child(2) .c{background:var(--ink)}
+.card:nth-child(3) .c{background:var(--plate);color:var(--ink)}
+.card:hover .c{transform:translateY(-6px)}
+.card p{margin-top:.7rem}
+
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2.5rem}
+.tier{border-top:1px solid var(--plate);padding-top:1.2rem}
+.tier p{margin:.6rem 0 1rem}
+.tier a{font:400 .85rem var(--small);text-decoration:none;border-bottom:1px solid var(--ox);padding-bottom:2px}
+.tier a:hover{color:var(--ox)}
+
+.contact{background:var(--ox);color:var(--vellum)}
+.contact h2{max-width:16em}
+.mail{font:italic 500 clamp(1.4rem,4.6vw,3.2rem)/1.2 var(--serif);text-decoration:none;word-break:break-all;border-bottom:1px solid var(--vellum)}
+html[lang=ar] .mail{font-family:var(--serif)}
+.links{display:flex;gap:2rem;margin-top:2rem;font:400 .9rem var(--small)}
+.links a{text-decoration:none;border-bottom:1px solid transparent}.links a:hover{border-color:var(--vellum)}
+.contact :focus-visible{outline-color:var(--vellum)}
+footer{padding:2.5rem 0;background:var(--vellum)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.seal{width:64px;height:64px;color:var(--vellum)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.iris path{stroke-dashoffset:0}.rule{width:100%}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="iris" viewBox="0 0 100 140">
+<path pathLength="1" d="M50 6C41 28 41 52 50 72C59 52 59 28 50 6Z"/>
+<path pathLength="1" d="M50 72C35 58 24 38 26 18C40 26 50 48 50 72Z"/>
+<path pathLength="1" d="M50 72C65 58 76 38 74 18C60 26 50 48 50 72Z"/>
+<path pathLength="1" d="M50 72C34 64 12 66 8 80C8 94 30 92 50 72Z"/>
+<path pathLength="1" d="M50 72C66 64 88 66 92 80C92 94 70 92 50 72Z"/>
+<path pathLength="1" d="M50 72V136"/>
+<path pathLength="1" d="M50 136C44 116 36 104 28 96"/>
+<path pathLength="1" d="M52 134C58 118 66 108 74 100"/>
+<path class="h" pathLength="1" d="M50 70C47 54 47 34 50 14M46 66C43 52 43 38 46 24M54 66C57 52 57 38 54 24M48 72C38 64 30 52 29 36M52 72C62 64 70 52 71 36M46 74C32 72 18 74 14 80M54 74C68 72 82 74 86 80"/>
+</symbol></defs></svg>
+
+<header><div class="wrap">
+<span class="cap" data-ar="استوديو تصميم تحريري">Editorial design studio</span>
+<nav><a href="#work" data-ar="عملنا">Work</a><a href="#services" data-ar="خدماتنا">Services</a><a href="#contact" data-ar="تواصل">Contact</a>
+<button id="lang" aria-label="Switch language">عربي</button></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+<div>
+<div class="wm" role="img" aria-label="Sohof, صحف"><span class="lat">SOHOF</span><span class="bar"></span><span class="arw">صحف</span></div>
+<p class="tag" data-ar="تصميم تحريري مدروس.">Editorial design, thought through.</p>
+</div>
+<svg class="iris" viewBox="0 0 100 140" aria-hidden="true"><use href="#iris"/></svg>
+</div></section>
+
+<section class="idea"><div class="wrap">
+<div class="rule"></div><div style="height:3rem"></div>
+<p data-ar="صحف استوديو تصميم تحريري. نمنح الكتب والمجلات والكتالوجات والتقارير فكرة، لا مجرد تخطيط.">Sohof is an editorial design studio. We give books, magazines, catalogs and reports an idea, not just a layout.</p>
+<p data-ar="يجب أن يقول الغلاف أو الصفحة المزدوجة شيئًا قبل أن يقرأ أحد كلمة.">A cover or spread should say something before anyone reads a word.</p>
+</div></section>
+
+<section id="work"><div class="wrap">
+<div class="rule"></div><div style="height:3rem"></div>
+<h2 data-ar="أعمال مختارة">Selected work</h2>
+<div class="lead">
+<div class="img">Add the burning butterfly image here</div>
+<div class="txt">
+<h3 data-ar="الفراشة المحترقة">The burning butterfly</h3>
+<div class="beat"><b data-ar="الطلب">Brief</b><span data-ar="احتاجت حملة للتوعية بالسرطان إلى صورة توقف القارئ.">A cancer awareness campaign needed an image that stops the reader.</span></div>
+<div class="beat"><b data-ar="الفكرة">Idea</b><span data-ar="فراشة تحترق ببطء. الجمال والفقد في إطار واحد.">A butterfly, burning slowly. Beauty and loss in one frame.</span></div>
+<div class="beat"><b data-ar="النتيجة">Result</b><span data-ar="أضف النتيجة: الانتشار أو النشر أو رأي العميل.">Add the outcome: reach, placement or client feedback.</span></div>
+</div></div>
+<div class="more">
+<div class="card"><div class="c">Medical Terminology</div><p class="cap" data-ar="دراسة الحالة قريبًا">Case study to come</p></div>
+<div class="card"><div class="c">Obour Magazine</div><p class="cap" data-ar="دراسة الحالة قريبًا">Case study to come</p></div>
+<div class="card"><div class="c">Egyptian Cuisine</div><p class="cap" data-ar="دراسة الحالة قريبًا">Case study to come</p></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<div class="rule"></div><div style="height:3rem"></div>
+<h2 data-ar="خدماتنا">Services</h2>
+<div class="tiers">
+<div class="tier"><h3 data-ar="مشروع واحد">One project</h3><p data-ar="كتاب أو مجلة أو تقرير واحد، من الفكرة إلى الملفات النهائية.">A single book, magazine or report, from idea to final files.</p><a href="#contact" data-ar="استفسر">Enquire</a></div>
+<div class="tier"><h3 data-ar="شركاء على المدى الطويل">Long-term partners</h3><p data-ar="علاقة مستمرة للناشرين والمؤسسات التي تصدر باستمرار.">An ongoing relationship for publishers and institutions that publish often.</p><a href="#contact" data-ar="استفسر">Enquire</a></div>
+<div class="tier"><h3 data-ar="الشركات">Businesses</h3><p data-ar="تقارير وكتالوجات ونشرات بنظام تصميم متسق.">Reports, catalogs and brochures with one consistent design system.</p><a href="#contact" data-ar="استفسر">Enquire</a></div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2 data-ar="هل لديك ما يستحق النشر؟">Have something worth publishing?</h2>
+<a class="mail" href="mailto:kamelahmedkamel21@gmail.com">kamelahmedkamel21@gmail.com</a>
+<div class="links"><a href="https://linkedin.com/in/kamel-khoudeiry-kk2004/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://behance.net/kamelahmed36" target="_blank" rel="noopener noreferrer">Behance</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<span class="cap" data-ar="الأعلى تقييمًا على أبوورك">Top Rated on Upwork</span>
+<svg class="seal" viewBox="0 0 64 64" role="img" aria-label="Sohof seal"><circle cx="32" cy="32" r="32" fill="#5E1A22"/><svg x="17" y="9" width="30" height="42" viewBox="0 0 100 140" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><use href="#iris"/></svg></svg>
+</div></footer>
+
+<script>
+const $=s=>[...document.querySelectorAll(s)];
+$("[data-ar]").forEach(e=>e.dataset.en=e.textContent);
+const btn=document.getElementById("lang");
+btn.onclick=()=>{
+ const ar=document.documentElement.lang!=="ar";
+ document.documentElement.lang=ar?"ar":"en";document.documentElement.dir=ar?"rtl":"ltr";
+ $("[data-ar]").forEach(e=>e.textContent=ar?e.dataset.ar:e.dataset.en);
+ btn.textContent=ar?"EN":"عربي";
+};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.5});
+$(".rule").forEach(r=>io.observe(r));
+</script>
+</body>
+</html>
